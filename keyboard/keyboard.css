@@ -52,3 +52,25 @@
 .keyboard__key--wide {
     width: 12%;
 }
+
+.keyboard__key--extrawide {
+    width: 36%;
+    max-width: 500px;
+}
+
+.keyboard__key--activatetable::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 9px;
+    height: 8px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: #00ff80;
+}
+
+.keyboard__key--dark {}
